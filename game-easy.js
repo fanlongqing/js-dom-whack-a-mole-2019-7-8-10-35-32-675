@@ -125,6 +125,12 @@ window.onload = function () {
      */
     moles.forEach(mole => mole.addEventListener('click', function (e) {
         // TODO: 在这里写用户点击地鼠发生的事.
+        	console.log(e);
+    	if(!timeUp){
+    		score=score+1;
+    	scoreBoard.innerHTML=score;
+        // TODO: 在这里写用户点击地鼠发生的事.
+    	}    	
     }));
 
 };
